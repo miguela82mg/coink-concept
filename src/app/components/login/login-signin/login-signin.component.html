@@ -1,1 +1,45 @@
-<p>login-signin works!</p>
+<div class="d_block text_center">
+  <!-- Imagen del logo -->
+  <img src="../../../../assets/img/logo.png" alt="coink" class="mx_auto">
+  <!-- div de inicio de sesión -->
+  <div class="ls_div">
+    <h2 class="text_title">INGRESA A TU CUENTA</h2>
+    <!-- Usuario -->
+    <div>
+      <mat-form-field floatLabel="auto" class="ls_input" color="primary">
+        <mat-label>Usuario</mat-label>
+        <input matInput type="text" [(ngModel)]="value">
+      </mat-form-field>
+    </div>
+    <!-- Contraseña -->
+    <div>
+      <mat-form-field floatLabel="auto" class="ls_input" color="primary">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" [(ngModel)]="value">
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <!-- Boton para iniciar sesion -->
+    <button mat-raised-button class="ls_btnSignin">INGRESAR</button>
+    <!-- boton de acción -->
+    <div class="m_t_1 text_left">
+      <button mat-button>
+        <span class="text_light text_underline text_small">Olvidé mi <strong>PIN</strong></span>
+      </button>
+    </div>
+    <!-- boton de acción -->
+    <div class="text_left">
+      <button mat-button>
+        <span class="text_light text_underline text_small">Olvidé mi número de celular</span>
+      </button>
+    </div>
+  </div>
+  <!-- Boton para registrarse -->
+  <div class="text_center  m_t_1">
+    <button mat-button>
+      <span class="text_light text_underline text_white text-underline">¿Quieres vincular tu empresa a Coink?</span>
+    </button>
+  </div>
+</div>

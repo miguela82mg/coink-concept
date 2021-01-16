@@ -1,0 +1,41 @@
+/* Estilo del div principal del login */
+.login_div {
+  background-color: #004B40;
+  background-image: url("../../../assets/img/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo del boton de ayuda */
+.login_divHelp {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo del boton */
+.login_imgHelp {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 0.3rem;
+}
+
+/* Estilo del footer */
+.login_footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: right;
+  color: lightgray;
+  font-size: small;
+  font-weight: lighter;
+  padding: 0.5rem;
+}

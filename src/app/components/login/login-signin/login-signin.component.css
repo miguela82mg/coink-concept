@@ -1,0 +1,35 @@
+/* Estilo del contenedor principal */
+.ls_div {
+  margin-top: 1.5rem;
+  border: solid 3px #1EEB00;
+  background-color: white;
+  padding: 2rem 3rem 1rem 3rem;
+  display: block;
+}
+
+/* Estilo del input del login */
+.ls_input {
+  max-width: 100%;
+  width: 240px;
+}
+
+/* Estilo del boton para iniciar sesión */
+.ls_btnSignin {
+  margin-top: 1rem;
+  background-color: #1EEB00;
+  color: black;
+  font-weight: bold;
+  border-radius: 10rem;
+  max-width: 100%;
+  width: 230px;
+  box-shadow: none;
+}
+
+/* Color del texto blanco */
+/* Todo: Clase global anclada en el css debido
+ a que se sobreponen los estilos de angular material */
+.text_title {
+  color: #004B40;
+  font-size: large;
+  font-weight: bold;
+}

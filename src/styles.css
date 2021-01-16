@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Clases que podrian ser utilizadas en diferentes componentes */
+
+/* Display block */
+.d_block {
+  display: block;
+}
+
+/* text center */
+.text_center {
+  text-align: center;
+}
+
+/* Texto pequeño */
+.text_small {
+  font-size: small;
+}
+
+/* Text left */
+.text_left {
+  text-align: left;
+}
+
+/* Padding full 0.5 */
+.p_05 {
+  padding: 0.5rem;
+}
+
+/* MArgin top 1.5 */
+.m_t_1 {
+  margin-top: 1.5rem;
+}
+
+/* MArgin top */
+.m_t_2 {
+  margin-top: 2rem;
+}
+
+/* Margin right 0.5 */
+.m_r_05 {
+  margin-right: 0.5rem;
+}
+
+/* MArgin auto */
+.mx_auto {
+  margin: auto;
+}
+
+/* Color del texto blanco */
+.text_title {
+  color: #004B40;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Color del texto secundario */
+.text_white {
+  color: white;
+}
+
+/* Texto con linea */
+.text_underline {
+  text-decoration: underline;
+}
+
+/* Font light */
+.text_light {
+  font-weight: lighter;
+}

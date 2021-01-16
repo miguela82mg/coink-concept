@@ -8,6 +8,10 @@ import { LoginSignupComponent } from './components/login/login-signup/login-sign
 import { LoginCodeComponent } from './components/login/login-code/login-code.component';
 import { LoginComponent } from './view/login/login.component';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Importación del modulo de material
+import { MaterialModule } from './material/material.module'
 
 // Definición de rutas
 const routes: Routes = [
@@ -15,6 +19,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', redirectTo: 'login', pathMatch: 'full' },
+
 ]
 
 @NgModule({
@@ -28,7 +33,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
