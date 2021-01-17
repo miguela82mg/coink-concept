@@ -1,0 +1,52 @@
+/* Estilo del div principal */
+.dashboard_div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  background-color: whitesmoke;
+}
+
+/* Estilo del sidenav */
+.dashboar_sidenav {
+  padding: 1rem;
+  background-color: white;
+  width: 14rem;
+}
+
+/* Estilo del contenedor de información */
+.dashboard_content {
+  width: 100%;
+  max-width: 100%;
+  overflow-y: auto;
+  position: relative;
+  padding-top: 3.5rem;
+}
+
+/* Estilo del dashboard */
+.dashboar_toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #004B40;
+  width: 100%;
+  display: flex;
+  padding: 0.5rem 0rem;
+  color: white;
+
+}
+
+/* Estilo del boton del sidenav */
+.dashboard_btnSidenav {
+  margin-left: 0.5rem;
+}
+
+/* Estilo del icono */
+.dashboard_icon {
+  height: 2.5rem;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}

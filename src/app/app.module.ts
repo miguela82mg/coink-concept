@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
+
 
 import { AppComponent } from './app.component';
 import { LoginSigninComponent } from './components/login/login-signin/login-signin.component';
@@ -9,9 +12,10 @@ import { LoginCodeComponent } from './components/login/login-code/login-code.com
 import { LoginComponent } from './view/login/login.component';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardDatatableComponent } from './components/dashboard/dashboard-datatable/dashboard-datatable.component'
 
 // Importación del modulo de material
-import { MaterialModule } from './material/material.module'
+import { MaterialModule } from './material/material.module';
 
 // Definición de rutas
 const routes: Routes = [
@@ -29,13 +33,17 @@ const routes: Routes = [
     LoginSignupComponent,
     LoginCodeComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardDatatableComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    MaterialModule
+    ReactiveFormsModule,
+    FormsModule,
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

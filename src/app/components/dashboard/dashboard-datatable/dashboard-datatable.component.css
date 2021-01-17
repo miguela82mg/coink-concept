@@ -1,0 +1,16 @@
+/* Estilo del div de tablas */
+.dd_div {
+  padding: 2rem;
+}
+
+/* Todo: Clase global anclada en el css debido
+ a que se sobreponen los estilos de angular material */
+.text_title {
+  color: #004B40;
+  font-size: large;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 3rem;
+}

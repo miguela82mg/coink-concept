@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // url base
+  BASE_URL: 'https://api.backmerchants.bancoink.biz/qa/',
+  // Parametro api
+  API_KEY: '252156'
 };
 
 /*

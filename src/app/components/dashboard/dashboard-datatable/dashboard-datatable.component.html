@@ -1,0 +1,10 @@
+<div class="dd_div">
+  <!-- Titulo -->
+  <h2 class="text_title">CONSULTAS - COMPRAS</h2>
+  <!-- Tabla -->
+  <ul>
+    <li *ngFor="let transaction  of dbTransactions; index as i">
+      {{transaction.name}}
+    </li>
+  </ul>
+</div>

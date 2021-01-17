@@ -9,7 +9,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2.5rem 0rem;
 }
+
+/* Para ordenadores y tabletas FHD */
+@media only screen and (min-width: 992px) {
+  .login_div {
+    padding: 0rem;
+  }
+}
+
 
 /* Estilo del boton de ayuda */
 .login_divHelp {
