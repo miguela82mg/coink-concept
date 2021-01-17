@@ -17,7 +17,7 @@ export class ApiLoginService {
   constructor(private http: HttpClient) { }
 
   // Función post del login
-  Post_login(credentials: LoginRequestModel): Observable<LoginResponseModel> {
+  Post_login(credentials): Observable<LoginResponseModel> {
     // Servicio del login
     const serviceLogin = this.api + "login"
     // parametro con autenticación

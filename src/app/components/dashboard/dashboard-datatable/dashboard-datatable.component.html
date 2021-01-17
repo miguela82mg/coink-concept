@@ -1,10 +1,43 @@
 <div class="dd_div">
   <!-- Titulo -->
   <h2 class="text_title">CONSULTAS - COMPRAS</h2>
+  <!-- Cabecera de opciones -->
+  <div class="dd_headerDiv">
+    <!-- Input de fechas -->
+    <mat-form-field appearance="fill">
+      <mat-label>Enter a date range</mat-label>
+      <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
+        <input matStartDate formControlName="start" placeholder="Start date">
+        <input matEndDate formControlName="end" placeholder="End date">
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    
+      <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Invalid start date</mat-error>
+      <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Invalid end date</mat-error>
+    </mat-form-field>
+    <!-- Input de busqueda -->
+    <mat-form-field floatLabel="auto" class="dd_inputSearch" color="primary">
+      <mat-label>Buscar</mat-label>
+      <input matInput type="text">
+    </mat-form-field>
+    <!-- Boton para limpiar filtro -->
+    <button mat-raised-button class="dd_btnClear">Limpiar filtros</button>
+  </div>
   <!-- Tabla -->
-  <ul>
-    <li *ngFor="let transaction  of dbTransactions; index as i">
-      {{transaction.name}}
-    </li>
-  </ul>
+  <table class="dd_table">
+    <!-- Cabecera de la tabla -->
+    <tr>
+      <th class="dd_headerTable" *ngFor="let title of header">{{title}}</th>
+    </tr>
+    <!-- Body de la tabla -->
+    <tr *ngFor="let transaction  of localTransactions; index as i" class="dd_rowTable">
+      <td>{{transaction.name}}</td>
+      <td>{{transaction.cel}}</td>
+      <td>{{transaction.email}}</td>
+      <td>{{transaction.date}}</td>
+      <td>{{transaction.age}}</td>
+    </tr>
+
+  </table>
 </div>

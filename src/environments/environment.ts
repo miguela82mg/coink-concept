@@ -7,7 +7,8 @@ export const environment = {
   // url base
   BASE_URL: 'https://api.backmerchants.bancoink.biz/qa/',
   // Parametro api
-  API_KEY: '252156'
+  API_KEY: '252156',
+  AUTH_KEY: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJBcGlLZXkiOiIyNTIxNTYiLCJWZXJzaW9uIjoiMSJ9.pPCapENz8Ddvq8VBMn7GyuXGsrdSFYoU7xMW9dlwh8A'
 };
 
 /*
