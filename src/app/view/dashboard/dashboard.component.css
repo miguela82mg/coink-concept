@@ -56,6 +56,13 @@
   }
 }
 
+/* Estilo del boton para salir */
+.dashboard_btnClose {
+  position: absolute;
+  bottom: 3rem;
+
+}
+
 /* Estilo del contenedor de información */
 .dashboard_content {
   width: 100%;

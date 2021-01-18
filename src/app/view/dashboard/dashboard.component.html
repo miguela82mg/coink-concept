@@ -1,8 +1,12 @@
 <div class="dashboard_div">
   <!-- Sidenav -->
   <div [ngClass]="{'dashboar_sidenav': sidenav, 'dashboar_sidenavClose': !sidenav}">
-    >
-    Menu
+    <h2 class="m_b_2">Menu</h2>
+    <!-- Boton para cerrar sesión -->
+    <button mat-stroked-button color="error" routerLink="/login">
+      <span class="m_r_05">Cerrar sesión</span>
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
   </div>
   <!-- Content -->
   <div class="dashboard_content">
