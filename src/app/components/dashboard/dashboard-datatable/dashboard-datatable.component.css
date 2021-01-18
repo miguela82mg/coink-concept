@@ -128,8 +128,8 @@
   color: #1EEB00;
 }
 
-/* Para ordenadores y tabletas FHD */
-@media only screen and (min-width: 992px) {
+/* Para tabletas en adelante */
+@media only screen and (min-width: 600px) {
   .dd_paginatorMovil {
     display: none;
   }
@@ -143,8 +143,8 @@
   display: none;
 }
 
-/* Para ordenadores y tabletas FHD */
-@media only screen and (min-width: 992px) {
+/* Para tabletas en adelante */
+@media only screen and (min-width: 600px) {
   .dd_paginator {
     padding: 1rem;
     text-align: right;
