@@ -8,22 +8,56 @@
   width: 100%;
   max-width: 100%;
   background-color: whitesmoke;
+  overflow: hidden;
 }
 
 /* Estilo del sidenav */
 .dashboar_sidenav {
   padding: 1rem;
   background-color: white;
-  width: 14rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding-top: 5rem;
+}
+
+/* Estilo del sidenav cerrado */
+.dashboar_sidenavClose {
+  padding: 1rem;
+  background-color: white;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  padding-top: 5rem;
+}
+
+/* Para ordenadores y tabletas FHD */
+@media only screen and (min-width: 992px) {
+  .dashboar_sidenav {
+    padding: 1rem;
+    background-color: white;
+    width: 15rem;
+    position: static;
+  }
+
+  .dashboar_sidenavClose {
+    padding: 1rem;
+    background-color: white;
+    width: 15rem;
+    position: static;
+  }
 }
 
 /* Estilo del contenedor de información */
 .dashboard_content {
   width: 100%;
-  max-width: 100%;
-  overflow-y: auto;
   position: relative;
-  padding-top: 3.5rem;
+  padding: 3.5rem 0rem 2rem 0rem;
 }
 
 /* Estilo del dashboard */
@@ -36,12 +70,19 @@
   display: flex;
   padding: 0.5rem 0rem;
   color: white;
-
+  z-index: 10;
 }
 
 /* Estilo del boton del sidenav */
 .dashboard_btnSidenav {
   margin-left: 0.5rem;
+}
+
+/* Para ordenadores y tabletas FHD */
+@media only screen and (min-width: 992px) {
+  .dashboard_btnSidenav {
+    display: none;
+  }
 }
 
 /* Estilo del icono */

@@ -1,13 +1,14 @@
 <div class="dashboard_div">
   <!-- Sidenav -->
-  <div class="dashboar_sidenav">
+  <div [ngClass]="{'dashboar_sidenav': sidenav, 'dashboar_sidenavClose': !sidenav}">
+    >
     Menu
   </div>
   <!-- Content -->
   <div class="dashboard_content">
     <div class="dashboar_toolbar">
       <!-- Boton para abrir y cerar el sidenav -->
-      <button mat-icon-button class="dashboard_btnSidenav">
+      <button mat-icon-button class="dashboard_btnSidenav" (click)="sidenav = !sidenav">
         <mat-icon>menu</mat-icon>
       </button>
       <!-- icono de coink -->

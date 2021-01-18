@@ -1,6 +1,17 @@
 /* Estilo del div de tablas */
 .dd_div {
-  padding: 2rem;
+  padding: 0rem 1rem 2rem 1rem;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Para tabletas en adelante */
+@media only screen and (min-width: 600px) {
+  .dd_div {
+    padding: 0rem 2rem 2rem 2rem;
+    height: 100%;
+    overflow-y: auto;
+  }
 }
 
 /* Todo: Clase global anclada en el css debido
@@ -12,20 +23,46 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+
 }
 
 /* Estilo de la cabecera de opciones */
 .dd_headerDiv {
-  display: flex;
+  display: block;
   width: 100%;
-  align-items: center;
 }
 
-.dd_inputSearch {
+/* Para tabletas en adelante */
+@media only screen and (min-width: 600px) {
+  .dd_headerDiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+/* Estilo del input de seleccion */
+.dd_inputSelect {
   width: 100%;
-  max-width: 40rem;
-  margin-left: auto;
+  margin-right: 0.5rem;
+
+}
+
+/* Para tabletas en adelante */
+@media only screen and (min-width: 600px) {
+  .dd_inputSelect {
+    width: 150px;
+    margin-left: 0.5rem;
+
+  }
+}
+
+/* Estilo del input de busqueda */
+.dd_inputSearch {
+  max-width: 400px;
+  width: 100%;
 }
 
 /* dt_btnFilter */
@@ -33,9 +70,16 @@
   background-color: #004B40;
   box-shadow: none;
   color: white;
-  margin-left: 1rem;
+  margin-left: auto;
   font-weight: normal;
   margin-bottom: 7px;
+}
+
+/* Estilo del div */
+.dd_divTable {
+  width: 100%;
+  overflow-x: auto;
+
 }
 
 /* Estilo de la tabla */
@@ -52,6 +96,9 @@
 /* Estilo de la cabecera */
 .dd_headerTable {
   padding: 1rem 0rem;
+  position: sticky;
+  top: 0rem;
+  background-color: white;
 }
 
 /* Estilo de las filas y columnas del body */
@@ -72,4 +119,17 @@
   background-color: whitesmoke;
   border-top: 1px solid whitesmoke;
 
+}
+
+/* Estilo del footer de la tabla */
+.dd_footerTable {
+  padding: 1rem;
+  text-align: right;
+  color: #1EEB00;
+}
+
+/* Estilo de los numero del paginador */
+.dd_numberTable {
+  color: black;
+  border-radius: 5px;
 }

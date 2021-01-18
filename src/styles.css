@@ -17,6 +17,11 @@ body {
   display: block;
 }
 
+/* Relative */
+.relative{
+  position: relative;
+}
+
 /* text center */
 .text_center {
   text-align: center;

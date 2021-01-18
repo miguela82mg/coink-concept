@@ -9,6 +9,8 @@ export class DashboardComponent implements OnInit {
 
   constructor() { }
 
+  sidenav:boolean = false; 
+
   ngOnInit(): void {
   }
 
