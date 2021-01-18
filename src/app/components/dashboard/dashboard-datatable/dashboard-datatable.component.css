@@ -1,6 +1,6 @@
 /* Estilo del div de tablas */
 .dd_div {
-  padding: 0rem 1rem 2rem 1rem;
+  padding: 0rem 1.5rem 2rem 1.5rem;
   height: 100%;
   overflow: auto;
 }
@@ -32,6 +32,7 @@
 .dd_headerDiv {
   display: block;
   width: 100%;
+  margin-bottom: 0.3rem;
 }
 
 /* Para tabletas en adelante */
@@ -63,6 +64,7 @@
 .dd_inputSearch {
   max-width: 400px;
   width: 100%;
+  margin-right: auto;
 }
 
 /* dt_btnFilter */
@@ -70,7 +72,6 @@
   background-color: #004B40;
   box-shadow: none;
   color: white;
-  margin-left: auto;
   font-weight: normal;
   margin-bottom: 7px;
 }
@@ -79,12 +80,12 @@
 .dd_divTable {
   width: 100%;
   overflow-x: auto;
-
 }
 
 /* Estilo de la tabla */
 .dd_table {
   width: 100%;
+  min-width: 800px;
   background-color: white;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 75, 64, 0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 75, 64, 0.3);
@@ -121,11 +122,35 @@
 
 }
 
+/* Estilo del paginador movil */
+.dd_paginatorMovil {
+  margin-left: auto;
+  color: #1EEB00;
+}
+
+/* Para ordenadores y tabletas FHD */
+@media only screen and (min-width: 992px) {
+  .dd_paginatorMovil {
+    display: none;
+  }
+}
+
 /* Estilo del footer de la tabla */
-.dd_footerTable {
+.dd_paginator {
   padding: 1rem;
   text-align: right;
   color: #1EEB00;
+  display: none;
+}
+
+/* Para ordenadores y tabletas FHD */
+@media only screen and (min-width: 992px) {
+  .dd_paginator {
+    padding: 1rem;
+    text-align: right;
+    color: #1EEB00;
+    display: flex;
+  }
 }
 
 /* Estilo de los numero del paginador */

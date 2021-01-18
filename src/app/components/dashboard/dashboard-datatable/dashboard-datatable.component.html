@@ -30,8 +30,28 @@
       <mat-label>Buscar</mat-label>
       <input matInput type="text">
     </mat-form-field>
-    <!-- Boton para limpiar filtro -->
-    <button mat-raised-button class="dd_btnClear">Limpiar filtros</button>
+    <div class="d_flex">
+      <!-- Boton para limpiar filtro -->
+      <button mat-raised-button class="dd_btnClear">Limpiar filtros</button>
+      <!-- Paginador movil -->
+      <div class="dd_paginatorMovil">
+        <!-- left -->
+        <button mat-icon-button>
+          <mat-icon>keyboard_arrow_left
+          </mat-icon>
+        </button>
+        <!-- Números de ejemplo -->
+        <button mat-icon-button class="dd_numberTable">1
+        </button>
+        <button mat-icon-button class="dd_numberTable">2
+        </button>
+        <!-- right -->
+        <button mat-icon-button>
+          <mat-icon>keyboard_arrow_right
+          </mat-icon>
+        </button>
+      </div>
+    </div>
   </div>
   <!-- Tabla -->
   <div class="dd_divTable">
@@ -51,7 +71,7 @@
       <tr class="relative">
         <!-- Paginator -->
         <td colspan="5">
-          <div class="dd_footerTable">
+          <div class="dd_paginator">
             <!-- left -->
             <button mat-icon-button>
               <mat-icon>keyboard_arrow_left
