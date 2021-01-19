@@ -14,7 +14,7 @@ Esta webApp se encuentra desarrollada con las siguientes tecnologías:
 Para visualizar la demo en preproducción puedes ingresar a (https://coink-concept-e8955.web.app/).
 
 
-## Clonación icono-arg-aeropuerto
+## Clonación 🎁
 No se requieren credenciales para la clonación del proyecto.
 
 
@@ -33,9 +33,9 @@ ng build
 ```
 ## A tener en cuenta
 Este proyecto utiliza datos privados, los cuales se encuentran en variables de entorno definidas por estos campos:
-*API = 'Url del servicio REST'
-*API_KEY = 'Parámetro de seguridad del servicio REST'
-*TOKEN = 'Token de seguridad para desencriptado'
+* API = 'Url del servicio REST'
+* API_KEY = 'Parámetro de seguridad del servicio REST'
+* TOKEN = 'Token de seguridad para desencriptado'
 
 
 
