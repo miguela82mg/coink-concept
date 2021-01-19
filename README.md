@@ -28,7 +28,7 @@ npm install
 ```bash
 ng serve
 ```
-3. Para la compilación a producción del proyecto, utilice el siguiente comando
+3. Para la compilación de preprodución del proyecto, utilice el siguiente comando
 ```bash
 ng build
 ```
