@@ -4,6 +4,7 @@ _Esta es una aplicación de prueba para Coink S.A. Desarrollada con el fin de va
 
 ## Stack 🚀
 Esta webApp se encuentra desarrollada con las siguientes tecnologías
+
 **Front-end**
 * Angular 11
 * Angular Material
