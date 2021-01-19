@@ -15,7 +15,7 @@ Esta webApp se encuentra desarrollada con las siguientes tecnologías
 Para visualizar la demo en preproducción puedes ingresar a (https://coink-concept-e8955.web.app/login).
 
 
-## Clonación 🎁
+## Clonación y licencia 🎁
 No se requieren credenciales para la clonación del proyecto. Sin embargo el uso del proyecto debe estar sujeto al permiso de Coink S.A.
 
 
@@ -28,7 +28,7 @@ npm install
 ```bash
 ng serve
 ```
-3. Para el deploy del proyecto, utilice el siguiente comando
+3. Para la compilación a producción del proyecto, utilice el siguiente comando
 ```bash
 ng build
 ```
