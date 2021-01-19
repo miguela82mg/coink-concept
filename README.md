@@ -11,11 +11,11 @@ Esta webApp se encuentra desarrollada con las siguientes tecnologías:
 
 
 ## Demo 😊
-Para visualizar la demo en preproducción puedes ingresar a (https://coink-concept-e8955.web.app/).
+Para visualizar la demo en preproducción puedes ingresar a (https://coink-concept-e8955.web.app/login).
 
 
 ## Clonación 🎁
-No se requieren credenciales para la clonación del proyecto.
+No se requieren credenciales para la clonación del proyecto. Sin embargo el uso del proyecto debe estar sujeto al permiso de Coink S.A.
 
 
 ## Instalación y funcionamiento ⚙️
@@ -35,7 +35,7 @@ ng build
 Este proyecto utiliza datos privados, los cuales se encuentran en variables de entorno definidas por estos campos:
 * API = 'Url del servicio REST'
 * API_KEY = 'Parámetro de seguridad del servicio REST'
-* TOKEN = 'Token de seguridad para desencriptado'
+* TOKEN = 'Token de seguridad para el desencriptado'
 
 
 
